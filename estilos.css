@@ -1,0 +1,102 @@
+:root {
+
+    --dark-cyan: hsl(185, 75%, 39%);
+    /*--very-dark-desaturated: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);*/
+
+}
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    font-family:'Kumbh Sans', sans-serif;
+    /*background-color: var(--dark-cyan);*/
+    background-image: url('resources/img/bg-pattern-top.svg'),url('resources/img/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position:right 50vw bottom 50vh, left 50vw top 50vh;
+    justify-content: center;
+    
+}
+.flex{
+    display: flex;
+    justify-content: center; /*Para centrar todo lo que quiero de la profile card*/
+    align-items: center;/*Siempre cuando utilices alineamiento horizontal toma el tama;o de su contener padre*/
+    height: 100vh; /*Toma el tama;o de la pantalla*/
+}
+.card{
+    justify-content: center;
+    background-color: white;
+    width: 326px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+}
+.card-header{
+    justify-content: center;
+    width: 326px;
+    display: block;
+    
+}
+
+.card-body{
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgba(153,153,153,0.4);
+}
+.card-body-img{
+    justify-content: center;
+    border: 5px solid white;
+    border-radius: 50%;
+    margin-top: -53px;
+    background-color: white;
+
+}
+
+.card-body-title{
+    justify-content: center;
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+}
+
+span{
+    /*color: var(--dark-gray);*/
+    font-weight: 400;
+    margin-left: 0.4rem;
+    justify-content: center;
+}
+.card-body-text{
+    /*color: var(--dark-gray);*/
+    font-size:1.1rem ;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+}
+.card-footer{/*como este es un contenido usamos flexbox*/
+    display: flex;
+    justify-content: center;
+    /*justify-content: space-evenly;*/
+}
+.card-footer-social, h3{
+    font-size: 1rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+    justify-content: center;
+}
+.card-footer-social{/*como esto es solo texto lo centro con text-aling*/
+    text-align: center;
+    justify-content: center;
+}
+.card-footer-social, p{
+    letter-spacing:2px;
+    font-size: 0.7rem;
+    justify-content: center;
+}
